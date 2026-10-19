@@ -1,10 +1,85 @@
+:root {
+  --bg: #0b0f17;
+  --surface: #131a26;
+  --surface-2: #1a2232;
+  --border: #263044;
+  --text: #e7ebf3;
+  --muted: #8a94aa;
+  --cyan: #22d3ee;
+  --violet: #a78bfa;
+  --mint: #34d399;
+  --coral: #fb7185;
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
 body {
-  background-color: #f4f6f9;
   min-height: 100vh;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(34, 211, 238, 0.12), transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(167, 139, 250, 0.12), transparent 40%);
+  background-attachment: fixed;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+/* ---------- Encabezado ---------- */
+.hero {
+  padding: 3.5rem 0 1.5rem;
+  text-align: center;
+}
+
+.hero-tag {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--cyan);
 }
 
 .titulo-principal {
+  margin: 0;
+  font-size: clamp(3rem, 9vw, 5.5rem);
   font-weight: 700;
-  color: #1f3a5f;
-  margin: 2rem 0 0.25rem;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  background: linear-gradient(90deg, var(--cyan), var(--violet) 60%, var(--coral));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-sub {
+  margin: 1rem 0 1.25rem;
+  color: var(--muted);
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.stack span {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background-color: var(--surface);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
 }

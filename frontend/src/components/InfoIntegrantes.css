@@ -1,0 +1,86 @@
+.info-titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2.5rem 0 1.25rem;
+  font-weight: 700;
+}
+
+.alert.info-alert {
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  background-color: rgba(167, 139, 250, 0.1);
+  color: var(--text);
+}
+
+.info-alert code {
+  color: var(--violet);
+}
+
+.card.integrante-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background-color: var(--surface);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card.integrante-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--violet);
+}
+
+.integrante-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--bg);
+}
+
+.avatar-1 {
+  background: linear-gradient(135deg, var(--cyan), var(--violet));
+}
+
+.avatar-2 {
+  background: linear-gradient(135deg, var(--coral), var(--violet));
+}
+
+.integrante-card .card-title {
+  margin-bottom: 0.15rem;
+  font-weight: 700;
+}
+
+.integrante-card .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-color: var(--border);
+  background-color: transparent;
+}
+
+.dato-label {
+  color: var(--muted);
+}
+
+.card.resumen-card {
+  border: 1px dashed var(--border);
+  border-radius: 18px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.resumen-valor {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cyan);
+}
